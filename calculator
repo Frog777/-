@@ -1,0 +1,24 @@
+a = float(input())
+b = float(input())
+c = input()
+try:
+    if c == "+":
+        print(float(a+b))
+    elif c == "-":
+        print(float(a-b))
+    elif c == "/":
+        print(float(a/b))
+    elif c == "*":
+        print(float(a*b))
+    elif c == "-":
+        print(float(a-b))
+    elif c == "mod":
+        print(float(a%b))
+    elif c == "pow":
+        print(float(a**b))
+    elif c == "div":
+        print(float(a//b))
+    else:
+        print(False)
+except ZeroDivisionError:
+    print("Деление на 0!")
